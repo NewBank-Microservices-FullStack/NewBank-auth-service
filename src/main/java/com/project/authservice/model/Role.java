@@ -13,7 +13,8 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Table(name="roles")
 public class Role {
     @Id
