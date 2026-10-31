@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name="roles")
+@Table(name="roles", uniqueConstraint= @UniqueConstraint(name="uk_roles_role_name", columnNames="role_name"))
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
